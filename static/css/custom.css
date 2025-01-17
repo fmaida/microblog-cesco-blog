@@ -59,61 +59,27 @@ img, pre {
     margin-bottom: 1.5em;
 }
 
+.site-header nav a, button:hover, .conversation-on-mb:hover, .reply-on-mastodon:hover, .reply-by-email:hover, input:is([type="button"]):hover, [type="submit"]:hover, [type="reset"]:disabled:hover, button, .conversation-on-mb, .reply-on-mastodon, .reply-by-email, input:is([type="button"]), [type="submit"], [type="reset"]:disabled, input[type=search], input[type=email], input[type=text] {
+    border-radius: 8px;
+}
+
 .gemlink {
     text-decoration: none;
     position: relative;
-    padding-left: 24px;
+    padding-left: 28px;
+    margin-bottom: 0.5em;
 }
 
 .gemlink::before {
     content: "\f0ac"; /* Codice Unicode per l'icona "globe" */
     font-family: "Font Awesome 5 Free"; /* Assicurati che il font sia caricato */
     font-weight: 900;
+    color: var(--heading-color);
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     margin-right: 8px;
-}
-
-@font-face {
-    font-family: 'Iosevka Term SS03';
-    font-style:  normal;
-    font-weight: normal;
-    src: url('/uploads/2025/iosevka-fixed-ss03-regular-b7aed84b4a3d74e5afed3a3438b0dc2b.woff2') format('woff2'),
-    url('/uploads/2025/iosevka-fixed-ss03-bold-1731a53e9517931037d93cd9b5cf656a.woff')  format('woff');
-}
-
-@font-face {
-    font-family: 'Iosevka Term SS03';
-    font-style:  normal;
-    font-weight: bold;
-    src: url('/uploads/2025/iosevka-fixed-ss03-bold-3146aa514ee08a1ed552599d8ce1c029.woff2') format('woff2'),
-    url('/uploads/2025/iosevka-fixed-ss03-regular-5cda2e12355dd1a046c368ed4a0e31ce.woff')  format('woff');
-}
-
-.gemlink {
-    text-decoration: none; /* Rimuove la sottolineatura, se necessario */
-    position: relative;
-    /* Per dare un po' di spazio alla sinistra del link portando il testo un po' a destra */
-    padding-left: 0;
-}
-
-.gemlink::before {
-    content: "\f0ac"; /* Codice Unicode per icona "globe" */
-    font: var(--fa-font-solid);
-    /*font-weight: normal;
-    font-variant: normal;*/
-    text-transform: none;
-    line-height: 1;
-    speak: none;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: -32px; /* Distanziare l'icona dal link */
-    margin-right: 8px;
-    margin-top: 1px;
 }
 
 .gemlink-home::before {
@@ -166,6 +132,11 @@ img, pre {
     font: var(--fa-font-brands);
 }
 
+.gemlink-wikipedia::before {
+    content: "\f266"; /* Codice Unicode per icona "wikipedia.org" */
+    font: var(--fa-font-brands);
+}
+
 .gemlink-soundcloud::before {
     content: "\f1be"; /* Codice Unicode per icona "soundcloud" */
     font: var(--fa-font-brands);
@@ -199,4 +170,20 @@ img, pre {
 .gemlink-book::before {
     content: "\f518"; /* Codice Unicode per icona "gemini protocol" */
     font: var(--fa-font-solid);
+}
+
+@font-face {
+    font-family: 'Iosevka Term SS03';
+    font-style:  normal;
+    font-weight: normal;
+    src: url('/fonts/iosevka-fixed-ss03-regular-b7aed84b4a3d74e5afed3a3438b0dc2b.woff2') format('woff2'),
+    url('/fonts/iosevka-fixed-ss03-bold-1731a53e9517931037d93cd9b5cf656a.woff')  format('woff');
+}
+
+@font-face {
+    font-family: 'Iosevka Term SS03';
+    font-style:  normal;
+    font-weight: bold;
+    src: url('/fonts/iosevka-fixed-ss03-bold-3146aa514ee08a1ed552599d8ce1c029.woff2') format('woff2'),
+    url('/fonts/iosevka-fixed-ss03-regular-5cda2e12355dd1a046c368ed4a0e31ce.woff')  format('woff');
 }
