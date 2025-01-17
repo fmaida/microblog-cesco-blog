@@ -1,55 +1,55 @@
 {{- $url := .Get "url" -}}
 {{- $title := .Get "title" | default $url -}}
-{{- $classes := .Get "class" | default ".gemlink" -}}
+{{- $classes := .Get "class" | default "gemlink" -}}
 
-{{- if eq $classes ".gemlink" -}}
+{{- if eq $classes "gemlink" -}}
 {{- if in $url "facebook.com" -}}
-  {{- $classes = printf "%s .gemlink-facebook" $classes -}}
+  {{- $classes = printf "%s gemlink-facebook" $classes -}}
 {{- end -}}
 {{- if in $url "instagram.com" -}}
-  {{- $classes = printf "%s .gemlink-instagram" $classes -}}
+  {{- $classes = printf "%s gemlink-instagram" $classes -}}
 {{- end -}}
 {{- if in $url "tiktok.com" -}}
-  {{- $classes = printf "%s .gemlink-tiktok" $classes -}}
+  {{- $classes = printf "%s gemlink-tiktok" $classes -}}
 {{- end -}}
 {{- if in $url "bsky.social" -}}
-  {{- $classes = printf "%s .gemlink-bluesky" $classes -}}
+  {{- $classes = printf "%s gemlink-bluesky" $classes -}}
 {{- end -}}
 {{- if in $url "bsky.app" -}}
-  {{- $classes = printf "%s .gemlink-bluesky" $classes -}}
+  {{- $classes = printf "%s gemlink-bluesky" $classes -}}
 {{- end -}}
 {{- if in $url "twitch.tv" -}}
-  {{- $classes = printf "%s .gemlink-twitch" $classes -}}
+  {{- $classes = printf "%s gemlink-twitch" $classes -}}
 {{- end -}}
 {{- if in $url "youtube.com" -}}
-  {{- $classes = printf "%s .gemlink-youtube" $classes -}}
+  {{- $classes = printf "%s gemlink-youtube" $classes -}}
 {{- end -}}
 {{- if in $url "youtu.be" -}}
-  {{- $classes = printf "%s .gemlink-youtube" $classes -}}
+  {{- $classes = printf "%s gemlink-youtube" $classes -}}
 {{- end -}}
 {{- if in $url "linkedin.com" -}}
-  {{- $classes = printf "%s .gemlink-linkedin" $classes -}}
+  {{- $classes = printf "%s gemlink-linkedin" $classes -}}
 {{- end -}}
 {{- if in $url "github.com" -}}
-  {{- $classes = printf "%s .gemlink-github" $classes -}}
+  {{- $classes = printf "%s gemlink-github" $classes -}}
 {{- end -}}
 {{- if in $url "wikipedia.org" -}}
-  {{- $classes = printf "%s .gemlink-wikipedia" $classes -}}
+  {{- $classes = printf "%s gemlink-wikipedia" $classes -}}
 {{- end -}}
 {{- if in $url "soundcloud.com" -}}
-  {{- $classes = printf "%s .gemlink-soundcloud" $classes -}}
+  {{- $classes = printf "%s gemlink-soundcloud" $classes -}}
 {{- end -}}
 {{- if in $url "odysee.com" -}}
-  {{- $classes = printf "%s .gemlink-odysee" $classes -}}
+  {{- $classes = printf "%s gemlink-odysee" $classes -}}
 {{- end -}}
 {{- if in $url "itch.io" -}}
-  {{- $classes = printf "%s .gemlink-itchio" $classes -}}
+  {{- $classes = printf "%s gemlink-itchio" $classes -}}
 {{- end -}}
 {{- if in $url "mailto:" -}}
-  {{- $classes = printf "%s .gemlink-email" $classes -}}
+  {{- $classes = printf "%s gemlink-email" $classes -}}
 {{- end -}}
 {{- if in $url "gemini://" -}}
-  {{- $classes = printf "%s .gemlink-geminiprotocol" $classes -}}
+  {{- $classes = printf "%s gemlink-geminiprotocol" $classes -}}
 {{- end -}}
 {{- end -}}
 <div class="{{ $classes }}">
