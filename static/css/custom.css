@@ -1,0 +1,202 @@
+:root {
+	--page-background: #243239;
+	--main-text: #D9ECED;
+	--main-link: #4BC2B9;
+	--main-link-hover: #4BC2B9;
+	--main-link-border: #243239;
+	--main-link-border-hover: #4BC2B9;
+	--profile-border: #3A8381;
+	--navigation-button-border: #4BC2B9;
+	--navigation-button-background: #243239;
+	--navigation-button-border-hover: #4BC2B9;
+	--navigation-button-background-hover: #4BC2B9;
+	--navigation-text: #4BC2B9;
+	--navigation-text-hover: #243239;
+	--heading-color: #5BD2C9;
+	--button-border: #4BC2B9;
+	--button-background: #243239;
+	--button-border-hover: #4BC2B9;
+	--button-background-hover: #4BC2B9;
+	--button-text: #4BC2B9;
+	--button-text-hover: #243239;
+	--hr: #294449;
+	--blockquote-border: #294449;
+	--blockquote-background: #4BC2B9;
+	--blockquote-text: #243239;
+	--code-border: #294449;
+	--code-background: #294449;
+	--code-text: #243239;
+	--pre-border: #294449;
+	--pre-background: #4BC2B9;
+	--note: #FFF9C4;
+	--alert: #FAD2D2;
+	--aside: #F5F5F5;
+	--callout: #DDEBF7;
+	--conversation-background: ;
+	--comment-border: #294449;
+	--footnotes: #8c8c8c;
+	--footnote-super: #000000;
+	--page-fold: #4BC2B9;
+	--video-placeholder: #fafafa;
+	--comment-form-background-color: #273B41;
+	--comment-form-border-color: #294449;
+	--shared-note: #FFF9C4;
+	--red-text: #5BD2C9;
+	--highlight: #5BD2C9;
+}
+
+a, h1, h2, h3, h4, h5, h6, pre, code, time {
+    font-family: "Iosevka Term SS03", "IBM Plex Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Droid Sans Mono", Monaco, Consolas, Courier, monospace;
+}
+
+img {
+    border-top: 1px solid var(--pre-border);
+    border-bottom: 1px solid var(--pre-border);
+}
+
+img, pre {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.gemlink {
+    text-decoration: none;
+    position: relative;
+    padding-left: 24px;
+}
+
+.gemlink::before {
+    content: "\f0ac"; /* Codice Unicode per l'icona "globe" */
+    font-family: "Font Awesome 5 Free"; /* Assicurati che il font sia caricato */
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 8px;
+}
+
+@font-face {
+    font-family: 'Iosevka Term SS03';
+    font-style:  normal;
+    font-weight: normal;
+    src: url('/uploads/2025/iosevka-fixed-ss03-regular-b7aed84b4a3d74e5afed3a3438b0dc2b.woff2') format('woff2'),
+    url('/uploads/2025/iosevka-fixed-ss03-bold-1731a53e9517931037d93cd9b5cf656a.woff')  format('woff');
+}
+
+@font-face {
+    font-family: 'Iosevka Term SS03';
+    font-style:  normal;
+    font-weight: bold;
+    src: url('/uploads/2025/iosevka-fixed-ss03-bold-3146aa514ee08a1ed552599d8ce1c029.woff2') format('woff2'),
+    url('/uploads/2025/iosevka-fixed-ss03-regular-5cda2e12355dd1a046c368ed4a0e31ce.woff')  format('woff');
+}
+
+.gemlink {
+    text-decoration: none; /* Rimuove la sottolineatura, se necessario */
+    position: relative;
+    /* Per dare un po' di spazio alla sinistra del link portando il testo un po' a destra */
+    padding-left: 0;
+}
+
+.gemlink::before {
+    content: "\f0ac"; /* Codice Unicode per icona "globe" */
+    font: var(--fa-font-solid);
+    /*font-weight: normal;
+    font-variant: normal;*/
+    text-transform: none;
+    line-height: 1;
+    speak: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -32px; /* Distanziare l'icona dal link */
+    margin-right: 8px;
+    margin-top: 1px;
+}
+
+.gemlink-home::before {
+    content: "\f015"; /* Codice Unicode per icona "home" */
+    font: var(--fa-font-solid);
+}
+
+.gemlink-facebook::before {
+    content: "\f09a"; /* Codice Unicode per icona "facebook" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-instagram::before {
+    content: "\f16d"; /* Codice Unicode per icona "instagram" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-tiktok::before {
+    content: "\e07b"; /* Codice Unicode per icona "tiktok" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-bluesky::before {
+    content: "\e671"; /* Codice Unicode per icona "bluesky" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-twitch::before {
+    content: "\f1e8"; /* Codice Unicode per icona "twitch" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-youtube::before {
+    content: "\f167"; /* Codice Unicode per icona "youtube" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-linkedin::before {
+    content: "\f08c"; /* Codice Unicode per icona "linkedin" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-mastodon::before {
+    content: "\f4f6"; /* Codice Unicode per icona "mastodon" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-github::before {
+    content: "\f09b"; /* Codice Unicode per icona "github" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-soundcloud::before {
+    content: "\f1be"; /* Codice Unicode per icona "soundcloud" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-odysee::before {
+    content: "\e5c6"; /* Codice Unicode per icona "odysee" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-itchio::before {
+    content: "\f83a"; /* Codice Unicode per icona "github" */
+    font: var(--fa-font-brands);
+}
+
+.gemlink-email::before {
+    content: "\f0e0"; /* Codice Unicode per icona "email" */
+    font: var(--fa-font-solid);
+}
+
+.gemlink-rss::before {
+    content: "\f09e"; /* Codice Unicode per icona "youtube" */
+    font: var(--fa-font-solid);
+}
+
+.gemlink-geminiprotocol::before {
+    content: "\f4fb"; /* Codice Unicode per icona "gemini protocol" */
+    font: var(--fa-font-solid);
+}
+
+.gemlink-book::before {
+    content: "\f518"; /* Codice Unicode per icona "gemini protocol" */
+    font: var(--fa-font-solid);
+}
