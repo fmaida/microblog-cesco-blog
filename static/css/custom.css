@@ -152,6 +152,11 @@ img, pre {
     font: var(--fa-font-brands);
 }
 
+.gemlink-steam::before {
+    content: "\f1b6"; /* Codice Unicode per icona "github" */
+    font: var(--fa-font-brands);
+}
+
 .gemlink-email::before {
     content: "\f0e0"; /* Codice Unicode per icona "email" */
     font: var(--fa-font-solid);

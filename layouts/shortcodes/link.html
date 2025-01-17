@@ -45,6 +45,12 @@
 {{- if in $url "itch.io" -}}
   {{- $classes = printf "%s gemlink-itchio" $classes -}}
 {{- end -}}
+{{- if in $url "steampowered.com" -}}
+  {{- $classes = printf "%s gemlink-steam" $classes -}}
+{{- end -}}
+{{- if in $url "gog.com" -}}
+  {{- $classes = printf "%s gemlink-gog" $classes -}}
+{{- end -}}
 {{- if in $url "mailto:" -}}
   {{- $classes = printf "%s gemlink-email" $classes -}}
 {{- end -}}
