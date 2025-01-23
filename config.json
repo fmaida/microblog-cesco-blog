@@ -3,6 +3,7 @@
 	"paginate": 8,
     "params": {
         "dateFormatShort": "2 Jan 2006",
-        "dateFormatLong": "2 January 2006"
+        "dateFormatLong": "2 January 2006",
+        "socialCardImage": "images/logo_twitter.png"
     }
 }
