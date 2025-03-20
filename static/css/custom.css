@@ -59,6 +59,12 @@ img, pre {
     margin-bottom: 1.5em;
 }
 
+pre {
+    background-color: var(--code-background);
+    border-color: var(--code-border);
+    border-radius: 8px;
+}
+
 .site-header nav a, button:hover, .conversation-on-mb:hover, .reply-on-mastodon:hover, .reply-by-email:hover, input:is([type="button"]):hover, [type="submit"]:hover, [type="reset"]:disabled:hover, button, .conversation-on-mb, .reply-on-mastodon, .reply-by-email, input:is([type="button"]), [type="submit"], [type="reset"]:disabled, input[type=search], input[type=email], input[type=text] {
     border-radius: 8px;
 }
