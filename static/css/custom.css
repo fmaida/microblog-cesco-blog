@@ -70,12 +70,12 @@ pre {
 }
 
 hr.article-break {
-  max-width: 700px;    /* O la larghezza massima desiderata, in px o % */
-  margin: 1.5em auto;  /* Margini verticale ed orizzontali automatici */
-  width: 100%;         /* Occupa fino al limite definito da max-width */
-  border: none;        /* Rimuove il bordo predefinito se necessario */
-  height: 1px;         /* Spessore della linea */
-  background-color: #ccc;  /* Colore della linea */
+  max-width: 700px;    			/* O la larghezza massima desiderata, in px o % */
+  margin: 1.75em auto;  		/* Margini verticale ed orizzontali automatici */
+  width: 100%;         			/* Occupa fino al limite definito da max-width */
+  border: none;        			/* Rimuove il bordo predefinito se necessario */
+  height: 1px;         			/* Spessore della linea */
+  background-color: var(--hr);  /* Colore della linea */
 }
 
 .gemlink {
